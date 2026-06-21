@@ -1,12 +1,14 @@
 import { EN } from "./locale/en";
 import { RU } from "./locale/ru";
+import { VI } from "./locale/vi";
 import { getLanguage } from "obsidian";
 
 type LocaleData = Partial<typeof EN>;
 
 const LOCALE_DATA: { [k: string]: LocaleData } = {
 	"en": EN,
-	"ru": RU
+	"ru": RU,
+	"vi": VI
 }
 
 let activeLocale: LocaleData | undefined = undefined;
